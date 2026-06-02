@@ -3,41 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Test Website</title>
+    <title>Design Test Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0078d4, #6a11cb);
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            color: #333;
+            color: white;
         }
 
-        .container {
-            text-align: center;
-            background: white;
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
             padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            text-align: center;
+            width: 500px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
-            color: #0078d4;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
         }
 
         p {
-            font-size: 18px;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: white;
+            color: #0078d4;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Test Website</h1>
-        <p>This is a simple static webpage for testing purposes.</p>
-        <p>🚀 Hosted with GitHub and ready for deployment!</p>
+    <div class="card">
+        <h1>🎨 Design Demo Website</h1>
+        <p>
+            Welcome to my static website hosted on GitHub Pages.
+            This page demonstrates a simple and modern web design
+            using HTML and CSS.
+        </p>
+
+        <a href="#" class="btn">Explore Design</a>
+
+        <div class="footer">
+            Designed by Mohit • Hosted on GitHub Pages 🚀
+        </div>
     </div>
 </body>
 </html>
